@@ -53,7 +53,7 @@ fig, ax = plt.subplots(1, 1, figsize=(15, 10))
 
 # 使用红-蓝渐变（RdBu_r）并设置国界线为灰色细线
 # NaN 值显示为白色，通过设置 'NaN' 为 'white' 来实现
-cmap = 'inferno_r'
+cmap = 'summer_r'
 merged.plot(column='Quality_of_Life_Index', ax=ax, legend=False,
             cmap=cmap,  # 红-蓝渐变（低值红色，高值蓝色）
             edgecolor='gray',  # 设置国界线颜色为灰色
