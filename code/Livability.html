@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livability Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .graph-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        img {
+            width: 80%;
+            height: auto;
+        }
+        .upload-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        input[type="file"] {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Livability Project: Livability Score Visualization</h2>
+
+    <div class="graph-container">
+        <h3>Current Livability Score Image</h3>
+        <img src="{{destop/picture }}" alt="Livability Score Image">
+    </div>
+
+    <div class="upload-container">
+        <h3>Upload New Image</h3>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*">
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
